@@ -1,0 +1,278 @@
+/* Importing Google Font: Raleway (light weight) */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+/* Reset and base styles for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Set full height layout and apply background gradient */
+html, body {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: -webkit-linear-gradient(left, #a397fb, #050c4a, #0e45dd);
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Highlight text selection color */
+::selection {
+  background: #12e8f0;
+  color: #fff;
+}
+
+/* Main authentication form container */
+.auth-form {
+  overflow: hidden;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: auto;
+  padding: 40px 30px;
+  background: #a0b0e4;
+  border-radius: 6px;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Title container for Login and Signup headers */
+.auth-form .title-text {
+  display: flex;
+  width: 200%;
+}
+
+/* Title styles */
+.auth-form .title {
+  width: 50%;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Slide tab control wrapper */
+.auth-form .slide-controls {
+  position: relative;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
+  margin: 30px 0 10px 0;
+  justify-content: space-between;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
+/* Label style for Login/Signup tab */
+.slide-controls .slide {
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 48px;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.6s ease;
+}
+
+/* Different color for Signup label */
+.slide-controls label.signup {
+  color: #000;
+}
+
+/* Slider tab that animates when toggling login/signup */
+.slide-controls .slider-tab {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  left: 0;
+  z-index: 0;
+  border-radius: 5px;
+  background: -webkit-linear-gradient(left, #a397fb, #050c4a, #0e45dd);
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Hide radio inputs used for toggling */
+input[type="radio"] {
+  display: none;
+}
+
+/* When "signup" is checked, move slider to right */
+#signup:checked ~ .slider-tab {
+  left: 50%;
+}
+
+/* Highlight active Signup tab */
+#signup:checked ~ label.signup {
+  color: #fff;
+  cursor: default;
+  user-select: none;
+}
+
+/* Deactivate Login tab when Signup is active */
+#signup:checked ~ label.login {
+  color: #000;
+}
+
+/* Opposite behavior for Login active */
+#login:checked ~ label.signup {
+  color: #000;
+}
+#login:checked ~ label.login {
+  cursor: default;
+  user-select: none;
+}
+
+/* Form container for both login and signup forms */
+.auth-form .form-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Inner wrapper to slide between forms */
+.form-container .form-inner {
+  display: flex;
+  width: 200%;
+}
+
+/* Each form (Login & Signup) occupies 50% width */
+.form-container .form-inner form {
+  width: 50%;
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Form field block */
+.form-inner form .field {
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Input style inside form field */
+.form-inner form .field input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 15px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  border-bottom-width: 2px;
+  font-size: 17px;
+  transition: all 0.3s ease;
+}
+
+/* Input focus effect */
+.form-inner form .field input:focus {
+  border-color: #12e8f0;
+}
+
+/* Input placeholder styling */
+.form-inner form .field input::placeholder {
+  color: #999;
+  transition: all 0.3s ease;
+}
+
+/* Placeholder color on input focus */
+form .field input:focus::placeholder {
+  color: #b3b3b3;
+}
+
+/* Link container for password reset */
+.form-inner form .pass-link {
+  margin-top: 5px;
+}
+
+/* Link container for switching to Signup */
+.form-inner form .signup-link {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Styling links */
+.form-inner form .pass-link a,
+.form-inner form .signup-link a {
+  color: #0e45dd;
+  text-decoration: none;
+}
+
+/* Link hover effects */
+.form-inner form .pass-link a:hover,
+.form-inner form .signup-link a:hover {
+  text-decoration: underline;
+}
+
+/* Button wrapper */
+form .btn {
+  height: 50px;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animated gradient layer on button hover */
+form .btn .btn-layer {
+  height: 100%;
+  width: 300%;
+  position: absolute;
+  left: -100%;
+  background: -webkit-linear-gradient(left, #a397fb, #050c4a, #0e45dd);
+  border-radius: 5px;
+  transition: all 0.4s ease;
+}
+
+/* Slide gradient in on hover */
+form .btn:hover .btn-layer {
+  left: 0;
+}
+
+/* Submit button inside form */
+form .btn input[type="submit"] {
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  background: none;
+  border: none;
+  color: #fff;
+  padding-left: 0;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Right-side background image for large screens */
+.login-bg {
+  width: 50%;
+  height: 100vh;
+  background: url('login_bg.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .auth-form,
+  .login-bg {
+    width: 100%;
+  }
+
+  .login-bg {
+    height: 200px;
+  }
+}

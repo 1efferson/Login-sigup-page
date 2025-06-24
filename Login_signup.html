@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up | Log In</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Wrapper for both form and image for layout switching -->
+    <div class="container">
+
+      <!-- Main authentication form section -->
+      <main class="auth-form">
+        <!-- Title text for Login and Signup -->
+        <div class="title-text">
+          <div class="title login">Account</div>
+          <div class="title signup">Account</div>
+        </div>
+
+        <!-- Container holding the form and sliding controls -->
+        <div class="form-container">
+          <!-- Slide controls for switching between Login and Signup -->
+          <div class="slide-controls">
+            <input type="radio" name="slide" id="login" checked />
+            <input type="radio" name="slide" id="signup" />
+            <label for="login" class="slide login">Login</label>
+            <label for="signup" class="slide signup">SignUp</label>
+            <div class="slider-tab"></div>
+          </div>
+
+          <!-- Forms wrapper -->
+          <div class="form-inner">
+            <!-- Login form -->
+            <form action="#" class="login">
+              <div class="field">
+                <input type="text" placeholder="Email Address" required />
+              </div>
+              <div class="field">
+                <input type="password" placeholder="Password" required />
+              </div>
+              <div class="pass-link">
+                <a href="#">Reset password?</a>
+              </div>
+              <div class="field btn">
+                <div class="btn-layer"></div>
+                <input type="submit" value="Login" />
+              </div>
+              <div class="signup-link">
+                Don't Have Account? <a href="">Create A New</a>
+              </div>
+            </form>
+
+            <!-- Signup form -->
+            <form action="#" class="signup">
+              <div class="field">
+                <input type="text" placeholder="Email Address" required />
+              </div>
+              <div class="field">
+                <input type="password" placeholder="Password" required />
+              </div>
+              <div class="field">
+                <input type="password" placeholder="Confirm Password" required />
+              </div>
+              <div class="field btn">
+                <div class="btn-layer"></div>
+                <input type="submit" value="SignUp" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+
+      <!-- Background image inside the container -->
+      <aside class="login-bg"></aside>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="style.js"></script>
+  </body>
+</html>
