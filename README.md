@@ -37,8 +37,13 @@ login-signup-page/
 ├── Login_signup.html       # Main HTML file
 ├── style.css               # Styling and layout
 ├── style.js                # JavaScript logic
-├── login_bg.jpg            # Background image
-└── .vscode/settings.json   # Optional VS Code settings
+├── images/                 # Folder for all images
+│   ├── login.png           # Login form screenshot
+│   ├── signup.png          # Signup form screenshot
+│   └── login_bg.jpg        # Background image
+└── .vscode/
+    └── settings.json     
+
 </code></pre>
 
 <hr>
