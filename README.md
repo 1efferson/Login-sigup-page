@@ -1,6 +1,6 @@
-<h1>Login/Signup Page</h1>
+<h1>✨Login/Signup Page</h1>
 
-<p>A responsive and animated Login/Signup interface built using HTML, CSS, and JavaScript.</p>
+<p>🎨 A responsive and animated Login/Signup interface built using **HTML**, **CSS**, and **JavaScript**.</p>
 
 <hr>
 
