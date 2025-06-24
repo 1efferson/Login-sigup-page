@@ -5,10 +5,11 @@
 <hr>
 
 <h2>📸 Preview</h2>
-![Login Page](images/login.png)
-![Signup Page](images/signup.png)
 
-
+<p align="center">
+  <img src="https://raw.githubusercontent.com/1efferson/Login-sigup-page/main/images/login.png" alt="Login Page"/>
+  <img src="https://raw.githubusercontent.com/1efferson/Login-sigup-page/main/images/signup.png" alt="Signup Page"/>
+</p>
 
 <hr>
 
