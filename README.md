@@ -5,7 +5,8 @@
 <hr>
 
 <h2>📸 Preview</h2>
-![Screenshot](login_bg.jpg)
+![login_page](login.png)
+![signup_page](signup.png)
 
 <hr>
 
