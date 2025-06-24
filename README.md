@@ -5,8 +5,8 @@
 <hr>
 
 <h2>📸 Preview</h2>
-![login_page](login.png)
-![signup_page](signup.png)
+![login_page](images/login.png)
+![signup_page](images/signup.png)
 
 <hr>
 
