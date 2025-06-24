@@ -257,7 +257,7 @@ form .btn input[type="submit"] {
 .login-bg {
   width: 50%;
   height: 100vh;
-  background: url('login_bg.jpg') no-repeat center center;
+  background: url('images/login_bg.jpg') no-repeat center center;
   background-size: cover;
 }
 
