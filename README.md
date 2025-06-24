@@ -6,8 +6,8 @@
 
 <h2>📸 Preview</h2>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/1efferson/Login-sigup-page/main/images/login.png" alt="Login Page" width="300"/>
-  <img src="https://raw.githubusercontent.com/1efferson/Login-sigup-page/main/images/signup.png" alt="Signup Page" width="300"/>
+  <img src="https://raw.githubusercontent.com/1efferson/Login-sigup-page/main/images/login.png" alt="Login Page"/>
+  <img src="https://raw.githubusercontent.com/1efferson/Login-sigup-page/main/images/signup.png" alt="Signup Page"/>
 </p>
 
 <hr>
