@@ -5,10 +5,10 @@
 <hr>
 
 <h2>📸 Preview</h2>
-![Login Page](https://raw.githubusercontent.com/1efferson/Login-sigup-page/main/images/login.png)
-![Signup Page](https://raw.githubusercontent.com/1efferson/Login-sigup-page/main/images/signup.png)
-
-
+<p align="center">
+  <img src="https://raw.githubusercontent.com/1efferson/Login-sigup-page/main/images/login.png" alt="Login Page" width="300"/>
+  <img src="https://raw.githubusercontent.com/1efferson/Login-sigup-page/main/images/signup.png" alt="Signup Page" width="300"/>
+</p>
 
 <hr>
 
