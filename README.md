@@ -5,8 +5,8 @@
 <hr>
 
 <h2>📸 Preview</h2>
-![Login Page](https://raw.githubusercontent.com/1efferson/Login-sigup-page/main/images/login.png)
-![Signup Page](https://raw.githubusercontent.com/1efferson/Login-sigup-page/main/images/signup.png)
+![Login Page](images/login.png)
+![Signup Page](images/signup.png)
 
 
 
